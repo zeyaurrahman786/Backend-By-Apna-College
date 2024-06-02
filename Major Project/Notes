@@ -1,0 +1,41 @@
+Major Project :- Airbnb Clone
+
+
+
+installation :-
+                npm init -y
+                npm i express
+                npm i ejs
+                npm i mongoose
+
+
+
+
+Getting Started :- 
+                
+                1. Database Set Up
+                2. REST Apis for CRUD
+
+
+
+Model :- Listing 
+
+        1. title
+        2. description
+        3. image
+        4. price
+        5. location 
+        6. country
+
+
+
+
+
+Initialization Database :-
+
+
+
+Index Route :-
+
+
+
