@@ -20,6 +20,14 @@ const userSchema = new mongoose.Schema ({
 const User = mongoose.model("User", userSchema);
 
 
+
+// CRUD Operations :-)
+
+
+
+
+// Create :-----------------------------------------------------------
+
 // const User1 = new User ({
 //   name: "Rahul",
 //   email: "rahul@gmail.co
@@ -47,6 +55,9 @@ const User = mongoose.model("User", userSchema);
 
 
 
+
+// Insert :----------------------------------------------------------------
+
 // User.insertMany([
 //   {name: 'John', email : 'john@example.com', age: 50},
 //   {name: 'Tony', email : 'tony@example.com', age: 40},
@@ -61,6 +72,8 @@ const User = mongoose.model("User", userSchema);
 
 
 
+// Find :--------------------------------------------------------
+
 // User.find({age: {$gt: 45}})
 // .then((res)=>{
 //   console.log(res[0].name);
@@ -68,7 +81,6 @@ const User = mongoose.model("User", userSchema);
 // .catch((err)=>{
 //   console.log(err);
 // })
-
 
 
 
@@ -84,10 +96,115 @@ const User = mongoose.model("User", userSchema);
 
 
 
-User.findById({_id: '665e006d84ecec3f65ac8f5a'})
-.then((res)=>{
-  console.log(res);
-})
-.catch((err)=>{
-  console.log(err);
-})
+// User.findById({_id: '665e006d84ecec3f65ac8f5a'})
+// .then((res)=>{
+//   console.log(res);
+// })
+// .catch((err)=>{
+//   console.log(err);
+// })
+
+
+
+
+
+// Update :----------------------------------------------------------------
+
+// User.updateOne({name: "Peter"}, {age: 47})
+// .then((res)=>{
+//   console.log(res);
+// })
+// .catch((err)=>{
+//   console.log(err);
+// })
+
+
+
+// User.updateMany({age: {$gt: 48}}, {age: 75})
+// .then((res)=>{
+//   console.log(res);
+// })
+// .catch((err)=>{
+//   console.log(err);
+// })
+
+
+
+
+
+
+// FindOneAndUpdate:----------------------------------------------------------
+
+// User.findOneAndUpdate({name: "John"}, {age: 35})
+// .then((res)=>{
+//   console.log(res);
+// })
+// .catch((err)=>{
+//   console.log(err);
+// })
+
+
+
+// User.findOneAndUpdate({name: "John"}, {age: 25}, {new: true})
+// .then((res)=>{
+//   console.log(res);
+// })
+// .catch((err)=>{
+//   console.log(err);
+// })
+
+
+
+
+// User.findByIdAndUpdate({_id: '665e006d84ecec3f65ac8f5b'}, {age: 27}, {new: true})
+// .then((res)=>{
+//   console.log(res);
+// })
+// .catch((err)=>{
+//   console.log(err);
+// })
+
+
+
+
+
+
+// Delete :----------------------------------------------------------------
+
+// User.deleteOne({name: "Peter"})
+//   .then((res)=>{
+//     console.log(res);
+//   })
+//   .catch((err)=>{
+//     console.log(err);
+//   })
+
+
+
+// User.deleteMany({name: "Zeyaur"})
+//   .then((res)=>{
+//     console.log(res);
+//   })
+//   .catch((err)=>{
+//     console.log(err);
+//   })
+
+
+
+// User.findByIdAndDelete({_id: '665e006d84ecec3f65ac8f5a'})
+//   .then((res)=>{
+//     console.log(res);
+//   })
+//   .catch((err)=>{
+//     console.log(err);
+//   })
+
+
+
+// User.findOneAndDelete({age: {$gt: 25}})
+//   .then((res)=>{
+//     console.log(res);
+//   })
+//   .catch((err)=>{
+//     console.log(err);
+//   })
