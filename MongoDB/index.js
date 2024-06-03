@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 main()
 .then(() => {
-    console.log('Connected to MongoDB!');
+    console.log('Connected to MongoDB Sucessfully');
     mongoose.connection.close();
 })
 .catch(err => console.log(err));
