@@ -6,7 +6,7 @@ main()
     console.log('Connected to MongoDB Sucessfully');
     mongoose.connection.close();
 })
-.catch(err => console.log(err));
+.catch(err => console.log(err)); 
 
 async function main() {
   await mongoose.connect('mongodb://127.0.0.1:27017/test');
