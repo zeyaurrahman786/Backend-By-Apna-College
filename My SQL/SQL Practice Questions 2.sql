@@ -62,8 +62,3 @@ SET grade = "B"
 WHERE marks >= 60 AND marks < 70;
 
 SELECT * FROM student;
-
-
-
-
-
