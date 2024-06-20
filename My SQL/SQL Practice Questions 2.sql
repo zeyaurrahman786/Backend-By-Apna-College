@@ -47,15 +47,19 @@ FROM student;
 ALTER TABLE student
 ADD COLUMN grade VARCHAR(2);
 
+
+
 SET SQL_SAFE_UPDATES = 0;
 
 UPDATE student
 SET grade = "O"
 WHERE marks >= 80;
 
+
 UPDATE student
 SET grade = "A"
 WHERE marks >= 70 AND marks < 80;
+
 
 UPDATE student
 SET grade = "B"
